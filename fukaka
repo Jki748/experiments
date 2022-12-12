@@ -1,0 +1,12 @@
+fukaka = {}
+
+fukaka[3] = "lol"
+fukaka[4] = "pecq"
+fukaka[5] = 'losos'
+
+
+d = fukaka.get(4)
+f = fukaka[4]
+
+print(d)
+print(f)
