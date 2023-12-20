@@ -6,23 +6,24 @@ void main(void) {
 
 
 	setlocale(LC_ALL, "RUS");
-	int c, i, ch;
+	int c, i;
+	char ch;
 	i = 0;
 	c = 0;
 
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < 50; i++) {
 
 		ch = getchar();
-		if (ch == "x") 
+		if (ch == 'x')
 			c++;
-		if (ch == " ")
+		if (ch == '\n')
 			break;
 
 		//printf("%c\n", ch);
 
 	}
-	if (c == 0)
-		printf("нет х");
+	if (c != 0)
+		printf("%d", c);
 	else
-		printf("%d\n", c);
+		printf("нет х");
 }
